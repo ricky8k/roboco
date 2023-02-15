@@ -8,3 +8,9 @@ branding:
 
 meta:
   title: " - Roboco"
+
+footer:
+  links:
+    - text: is-cute
+      link: https://github.com/is-cute
+      icon: mark-github

@@ -564,7 +564,7 @@ public class U3_L5_Activity_Two
 ```
 +++
 
-## Unit 3: Lesson 6 - De Morgan's Law
+## Unit 3: Lesson 6: De Morgan's Law
 
 ### Coding Activity 1
 +++ U3_L6_Activity_One.java

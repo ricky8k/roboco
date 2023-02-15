@@ -485,7 +485,7 @@ public class Plane
 ```
 +++
 
-## Unit 5: Lesson 7 - Documenting a Class
+## Unit 5: Lesson 7: Documenting a Class
 
 ### Coding Activity 1
 +++ Rectangle.java
