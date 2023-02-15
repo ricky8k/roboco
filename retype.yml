@@ -10,4 +10,4 @@ meta:
   title: " - Roboco"
 
 footer:
-  copyright: [is-cute](https://is-cute.moe), {{ year }}
+  copyright: [is-cute](https://is-cute.moe) - {{ year }} 

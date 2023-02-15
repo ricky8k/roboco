@@ -6,6 +6,7 @@ on:
   push:
     branches:
       - docs
+
 jobs:
   publish:
     name: Publish to retype branch
