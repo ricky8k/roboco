@@ -1,4 +1,4 @@
-# [roboco.is-cute.moe](roboco.is-cute.moe)
+# [roboco.is-cute.moe](https://roboco.is-cute.moe)
 
 A (cute) documentation page written with [Retype](https://github.com/retypeapp/retype).
 

@@ -1,10 +1,11 @@
 name: Publish Retype powered website to GitHub Pages
+permissions:
+  contents: write
 on:
   workflow_dispatch:
   push:
     branches:
       - docs
-
 jobs:
   publish:
     name: Publish to retype branch
