@@ -36,7 +36,7 @@ class U1_L6_Activity_One
 }
 ```
 +++
-[!button Raw](/raw/Unit-1/1.6-NumericCasts/1.6-Activity1.java)
+[!button Raw](/docs/project-stem/unit-1/1-6/raw/1.6-Activity1.java)
 
 ## Coding Activity 2
 +++ U1_L6_Activity_Two.java
@@ -68,7 +68,7 @@ class U1_L6_Activity_Two
 }
 ```
 +++
-[!button Raw](/raw/Unit-1/1.6-NumericCasts/1.6-Activity2.java)
+[!button Raw](/docs/project-stem/unit-1/1-6/raw/1.6-Activity2.java)
 
 ## Coding Activity 3
 +++ U1_L6_Activity_Three.java
@@ -98,4 +98,4 @@ class U1_L6_Activity_Three
 
 ```
 +++
-[!button Raw](/raw/Unit-1/1.6-NumericCasts/1.6-Activity3.java)
+[!button Raw](/docs/project-stem/unit-1/1-6/raw/1.6-Activity3.java)

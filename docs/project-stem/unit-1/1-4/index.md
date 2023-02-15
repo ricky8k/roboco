@@ -46,7 +46,7 @@ class U1_L4_Activity_One
 }
 ```
 +++
-[!button Raw](/raw/Unit-1/1.4-NumberCalculations/1.4-Activity1.java)
+[!button Raw](/docs/project-stem/unit-1/1-4/raw/1.4-Activity1.java)
 
 ## Coding Activity 2
 +++ U1_L4_Activity_Two.java
@@ -74,7 +74,7 @@ class U1_L4_Activity_Two
 }
 ```
 +++
-[!button Raw](/raw/Unit-1/1.4-NumberCalculations/1.4-Activity2.java)
+[!button Raw](/docs/project-stem/unit-1/1-4/raw/1.4-Activity2.java)
 
 ## Coding Activity 3
 +++ U1_L4_Activity_Three.java
@@ -108,7 +108,7 @@ class U1_L4_Activity_Three
 }
 ```
 +++
-[!button Raw](/raw/Unit-1/1.4-NumberCalculations/1.4-Activity3.java)
+[!button Raw](/docs/project-stem/unit-1/1-4/raw/1.4-Activity3.java)
 
 ## Coding Activity 4
 +++ U1_L4_Activity_Four.java
@@ -135,4 +135,4 @@ class U1_L4_Activity_Four
 }
 ```
 +++
-[!button Raw](/raw/Unit-1/1.4-NumberCalculations/1.4-Activity4.java)
+[!button Raw](/docs/project-stem/unit-1/1-4/raw/1.4-Activity4.java)

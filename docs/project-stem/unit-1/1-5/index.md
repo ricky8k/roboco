@@ -40,7 +40,7 @@ class U1_L5_Activity_One
 }
 ```
 +++
-[!button Raw](/raw/Unit-1/1.5-ModularDivision/1.5-Activity1.java)
+[!button Raw](/docs/project-stem/unit-1/1-5/raw/1.5-Activity1.java)
 
 ## Coding Activity 2
 +++ U1_L5_Activity_Two.java
@@ -79,4 +79,4 @@ class U1_L5_Activity_Two
 }
 ```
 +++
-[!button Raw](/raw/Unit-1/1.5-ModularDivision/1.5-Activity2.java)
+[!button Raw](/docs/project-stem/unit-1/1-5/raw/1.5-Activity2.java)

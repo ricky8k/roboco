@@ -31,7 +31,7 @@ class U1_L3_Activity_One
 }
 ```
 +++
-[!button Raw](/raw/Unit-1/1.3-DataTypes/1.3-Activity1.java)
+[!button Raw](/docs/project-stem/unit-1/1-3/raw/1.3-Activity1.java)
 
 ## Coding Activity 2
 +++ U1_L3_Activity_Two.java
@@ -59,7 +59,7 @@ class U1_L3_Activity_Two
 }
 ```
 +++
-[!button Raw](/raw/Unit-1/1.3-DataTypes/1.3-Activity2.java)
+[!button Raw](/docs/project-stem/unit-1/1-3/raw/1.3-Activity2.java)
 
 ## Coding Activity 3
 +++ U1_L3_Activity_Three.java
@@ -89,5 +89,4 @@ public class U1_L3_Activity_Three
 }
 ```
 +++
-[!button Raw](/raw/Unit-1/1.3-DataTypes/1.3-Activity3.java)
-
+[!button Raw](/docs/project-stem/unit-1/1-3/raw/1.3-Activity2.java)

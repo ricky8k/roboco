@@ -21,7 +21,7 @@ class U1_L1_Activity_One
 }
 ```
 +++
-[!button Raw](/raw/Unit-1/1.1-OutputInJava/1.1-Activity1.java)
+[!button Raw](/docs/project-stem/unit-1/1-1/raw/1.1-Activity1.java)
 
 ## Coding Activity 2
 +++ U1_L1_Activity_Two.java
@@ -40,7 +40,7 @@ class U1_L1_Activity_Two
 }
 ```
 +++
-[!button Raw](/raw/Unit-1/1.1-OutputInJava/1.1-Activity2.java)
+[!button Raw](/docs/project-stem/unit-1/1-1/raw/1.1-Activity2.java)
 
 ## Coding Activity 3
 +++ U1_L1_Activity_Three.java
@@ -60,5 +60,5 @@ class U1_L1_Activity_Three
 }
 ```
 +++
-[!button Raw](/raw/Unit-1/1.1-OutputInJava/1.1-Activity3.java)
+[!button Raw](/docs/project-stem/unit-1/1-1/raw/1.1-Activity3.java)
 

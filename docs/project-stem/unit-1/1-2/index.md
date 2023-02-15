@@ -30,7 +30,7 @@ class U1_L2_Activity_One
 }
 ```
 +++
-[!button Raw](/raw/Unit-1/1.2-UserInputAndVariables/1.2-Activity1.java)
+[!button Raw](/docs/project-stem/unit-1/1-2/raw/1.2-Activity1.java)
 
 ## Coding Activity 2
 +++ U1_L2_Activity_Two.java
@@ -61,7 +61,7 @@ class U1_L2_Activity_Two
 }
 ```
 +++
-[!button Raw](/raw/Unit-1/1.2-UserInputAndVariables/1.2-Activity2.java)
+[!button Raw](/docs/project-stem/unit-1/1-2/raw/1.2-Activity2.java)
 
 ## Coding Activity 3
 +++ U1_L2_Activity_Three.java
@@ -89,5 +89,5 @@ class U1_L2_Activity_Three
 }
 ```
 +++
-[!button Raw](/raw/Unit-1/1.2-UserInputAndVariables/1.2-Activity3.java)
+[!button Raw](/docs/project-stem/unit-1/1-2/raw/1.2-Activity3.java)
 
