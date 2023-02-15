@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.729746000442">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.729816432337">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -27,11 +27,12 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=2.4.0.729746000442" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=2.4.0.729816432337" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.729746000442" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.729816432337" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.729746000442" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.729816432337" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=2.4.0.729816432337" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -47,6 +48,10 @@
                 <div class="flex items-center justify-between h-full py-2 md:w-75">
                     <div class="flex items-center px-2 md:px-6">
                         <a id="docs-site-logo" href="../../" class="flex items-center leading-snug text-2xl">
+                            <span class="w-10 mr-2 grow-0 shrink-0 overflow-hidden">
+                                <img class="max-h-10 dark:hidden md:inline-block" src="../../static/icons/icon.png">
+                                <img class="max-h-10 hidden dark:inline-block" src="../../static/icons/icon.png">
+                            </span>
                             <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">Roboco</span>
                         </a>
                     </div>
@@ -155,6 +160,987 @@
         <span>Unit 3: Boolean Expressions and If Statements</span>
     </h1>
 </doc-anchor-target>
+<doc-anchor-target id="unit-3-lesson-1-simple-ifs">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#unit-3-lesson-1-simple-ifs">#</doc-anchor-trigger>
+        <span>Unit 3: Lesson 1: Simple Ifs</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="coding-activity-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1">#</doc-anchor-trigger>
+        <span>Coding Activity 1</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u3-l1-activity-one-java">
+<template #title>U3_L1_Activity_One.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 1 Coding Activity Question 1 */
+
+import java.util.Scanner;
+
+public class U3_L1_Activity_One
+{
+  public static void main(String[] args)
+  {
+    // Initialize Scanner
+    Scanner scan = new Scanner(System.in);
+    
+    // User Input
+    System.out.println(&quot;Please enter a double:&quot;);
+    double x = scan.nextDouble();
+    
+    // Final Output
+    if (x == 12.345)
+    {
+      System.out.println(&quot;YES&quot;);
+    }
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-2">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2">#</doc-anchor-trigger>
+        <span>Coding Activity 2</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u3-l1-activity-two-java">
+<template #title>U3_L1_Activity_Two.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 1 Coding Activity Question 2 */
+
+import java.util.Scanner;
+
+public class U3_L1_Activity_Two
+{
+  public static void main(String[] args)
+  {
+    // Initialize Scanner
+    Scanner scan = new Scanner(System.in);
+    
+    // User Input
+    System.out.println(&quot;Please enter an integer:&quot;);
+    int x = scan.nextInt();
+    
+    // Final Output
+    if (x == 48)
+    {
+      System.out.println(&quot;YES&quot;);
+    }
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-3">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-3">#</doc-anchor-trigger>
+        <span>Coding Activity 3</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u3-l1-activity-three-java">
+<template #title>U3_L1_Activity_Three.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 1 Coding Activity Question 3 */
+
+import java.util.Scanner;
+
+public class U3_L1_Activity_Three
+{
+  public static void main(String[] args)
+  {
+    // Initialize Scanner
+    Scanner scan = new Scanner(System.in);
+    
+    // User Input
+    System.out.println(&quot;Please enter two integers:&quot;);
+    int x = scan.nextInt();
+    int y = scan.nextInt();
+    
+    // Final Output
+    if (x == 20 &amp;&amp; y == 40)
+    {
+      System.out.println(&quot;YES&quot;);
+    }
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-4">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-4">#</doc-anchor-trigger>
+        <span>Coding Activity 4</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u3-l1-activity-four-java">
+<template #title>U3_L1_Activity_Four.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 1 Coding Activity Question 4 */
+
+import java.util.Scanner;
+
+public class U3_L1_Activity_Four
+{
+  public static void main(String[] args)
+  {
+    // Initialize Scanner
+    Scanner scan = new Scanner(System.in);
+    
+    // User Input
+    System.out.println(&quot;Please enter an integer:&quot;);
+    int x = scan.nextInt();
+    
+    // Final Output
+    if (x % 2 == 0) // Checks if x can be divided by 2
+    {
+      System.out.println(&quot;Divisible by 2!&quot;);
+    }
+    if (x % 3 == 0) // Checks if x can be divided by 3
+    {
+      System.out.println(&quot;Divisible by 3!&quot;);
+    }
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="unit-3-lesson-2-relational-operators">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#unit-3-lesson-2-relational-operators">#</doc-anchor-trigger>
+        <span>Unit 3: Lesson 2: Relational Operators</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="coding-activity-1-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-1">#</doc-anchor-trigger>
+        <span>Coding Activity 1</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u3-l2-activity-one-java">
+<template #title>U3_L2_Activity_One.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 2 Coding Activity Question 1 */
+
+import java.util.Scanner;
+
+public class U3_L2_Activity_One
+{
+  public static void main(String[] args)
+  {
+    // Initialize Scanner
+    Scanner scan = new Scanner(System.in);
+    
+    // User Input
+    System.out.println(&quot;Please enter five numbers:&quot;);
+    double num1 = scan.nextDouble();
+    double num2 = scan.nextDouble();
+    double num3 = scan.nextDouble();
+    double num4 = scan.nextDouble();
+    double num5 = scan.nextDouble();
+    
+    // Calculate Average
+    double avg = (num1 + num2 + num3 + num4 + num5) / 5;
+    
+    // Final Output
+    if (avg &gt;= 89.95)
+    {
+      System.out.println(&quot;ABOVE AVERAGE&quot;);
+    }
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-2-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2-1">#</doc-anchor-trigger>
+        <span>Coding Activity 2</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u3-l2-activity-two-java">
+<template #title>U3_L2_Activity_Two.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 2 Coding Activity Question 2 */
+
+import java.util.Scanner;
+
+public class U3_L2_Activity_Two
+{
+  public static void main(String[] args)
+  {
+    // Initialize Scanner
+    Scanner scan = new Scanner(System.in);
+    
+    // User Input
+    System.out.println(&quot;Please enter two numbers:&quot;);
+    double num1 = scan.nextDouble();
+    double num2 = scan.nextDouble();
+    
+    // Final Output
+    if (num1 &lt;= num2)
+    {
+      System.out.println(&quot;Smallest is: &quot; + num1);
+    }
+    if (num1 &gt; num2)
+    {
+      System.out.println(&quot;Smallest is: &quot; + num2);
+    }
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-3-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-3-1">#</doc-anchor-trigger>
+        <span>Coding Activity 3</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u3-l2-activity-three-java">
+<template #title>U3_L2_Activity_Three.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 2 Coding Activity Question 3 */
+
+import java.util.Scanner;
+
+public class U3_L2_Activity_Three
+{
+  public static void main(String[] args)
+  {
+    // Initialize Scanner
+    Scanner scan = new Scanner(System.in);
+    
+    // User Input
+    System.out.println(&quot;What is the temperature?&quot;);
+    double temp = scan.nextDouble();
+    
+    // Final Output
+    if (temp &lt; 97 || temp &gt; 99)
+    {
+      System.out.println(&quot;NOT NORMAL&quot;);
+    }
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-4-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-4-1">#</doc-anchor-trigger>
+        <span>Coding Activity 4</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u3-l2-activity-four-java">
+<template #title>U3_L2_Activity_Four.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 2 Coding Activity Question 4 */
+
+import java.util.Scanner;
+
+public class U3_L2_Activity_Four
+{
+  public static void main(String[] args)
+  {
+    // Initialize Scanner
+    Scanner scan = new Scanner(System.in);
+    
+    // User Input
+    System.out.println(&quot;Enter two test scores:&quot;);
+    double test1 = scan.nextDouble();
+    double test2 = scan.nextDouble();
+    
+    // Final Output
+    if (test1 &lt; 0.0 || test1 &gt; 100.0)
+    {
+      System.out.println(&quot;Not Valid&quot;);
+    }
+    if (test2 &lt; 0.0 || test2 &gt; 100.0)
+    {
+      System.out.println(&quot;Not Valid&quot;);
+    }
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="unit-3-lesson-3-else">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#unit-3-lesson-3-else">#</doc-anchor-trigger>
+        <span>Unit 3: Lesson 3: Else</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="coding-activity-1-2">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-2">#</doc-anchor-trigger>
+        <span>Coding Activity 1</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u3-l3-activity-one-java">
+<template #title>U3_L3_Activity_One.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 3 Coding Activity Question 1 */
+
+import java.util.Scanner;
+
+public class U3_L3_Activity_One
+{
+  public static void main(String[] args)
+  {
+    // Initialize Scanner
+    Scanner scan = new Scanner(System.in);
+    
+    // User Input
+    System.out.println(&quot;Please enter an integer:&quot;);
+    int x = scan.nextInt();
+    
+    // Final Output
+    if (x % 2 == 0) // x is even
+    {
+      System.out.println(&quot;Even&quot;);
+    }
+    else // x is odd
+    {
+      System.out.println(&quot;Odd&quot;);
+    }
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-2-2">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2-2">#</doc-anchor-trigger>
+        <span>Coding Activity 2</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u3-l3-activity-two-java">
+<template #title>U3_L3_Activity_Two.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 3 Coding Activity Question 2 */
+
+import java.util.Scanner;
+
+public class U3_L3_Activity_Two
+{
+  public static void main(String[] args)
+  {
+    // Initialize Scanner
+    Scanner scan = new Scanner(System.in);
+    
+    // User Input
+    System.out.println(&quot;Please enter a letter grade:&quot;);
+    String grade = scan.nextLine();
+    
+    // Final Output
+    if (grade.equals(&quot;A&quot;)) // A = 90-100
+    {
+      System.out.println(&quot;90-100&quot;);
+    }
+    else if (grade.equals(&quot;B&quot;)) // B = 80-90
+    {
+      System.out.println(&quot;80-90&quot;);
+    }
+    else if (grade.equals(&quot;C&quot;)) // C = 70-80
+    {
+      System.out.println(&quot;70-80&quot;);
+    }
+    else if (grade.equals(&quot;D&quot;)) // D = 60-70
+    {
+      System.out.println(&quot;60-70&quot;);
+    }
+    else if (grade.equals(&quot;F&quot;)) // F = 0-60
+    {
+      System.out.println(&quot;0-60&quot;);
+    }
+    else // Grade provided is not a valid value
+    {
+      System.out.println(&quot;Invalid letter grade&quot;);
+    }
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-3-2">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-3-2">#</doc-anchor-trigger>
+        <span>Coding Activity 3</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u3-l3-activity-three-java">
+<template #title>U3_L3_Activity_Three.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 3 Coding Activity Question 3 */
+
+import java.util.Scanner;
+
+public class U3_L3_Activity_Three
+{
+  public static void main(String[] args)
+  {
+    // Initialize Scanner
+    Scanner scan = new Scanner(System.in);
+    
+    // User Input
+    System.out.println(&quot;Please enter two integers:&quot;);
+    System.out.print(&quot;&gt; &quot;);
+    int x1 = scan.nextInt();
+    System.out.print(&quot;&gt; &quot;);
+    int x2 = scan.nextInt();
+    
+    // Create Problem
+    int calAnswer = x1 + x2;
+    System.out.println(x1 + &quot; + &quot; + x2 + &quot; = ?&quot;); // x1 + x2 = calAnswer
+    System.out.print(&quot;&gt; &quot;);
+    int userAnswer = scan.nextInt();
+    
+    // Final Output
+    if (userAnswer == calAnswer)
+    {
+      System.out.println(&quot;Correct!&quot;);
+    }
+    else
+    {
+      System.out.println(&quot;Wrong&quot;);
+    }
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-4-2">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-4-2">#</doc-anchor-trigger>
+        <span>Coding Activity 4</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u3-l3-activity-four-java">
+<template #title>U3_L3_Activity_Four.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 3 Coding Activity Question 4 */
+
+import java.util.Scanner;
+
+public class U3_L3_Activity_Four
+{
+  public static void main(String[] args)
+  {
+    // Initialize Scanner
+    Scanner scan = new Scanner(System.in);
+    
+    // User Input
+    System.out.println(&quot;What is the temperature?&quot;);
+    int temp = scan.nextInt();
+    
+    // Final Output
+    if (temp &gt;= 97 &amp;&amp; temp &lt;= 99) // Normal when temp is between 97 &amp; 99
+    {
+      System.out.println(&quot;Temperature is OK&quot;);
+    }
+    else
+    {
+      System.out.println(&quot;NOT NORMAL&quot;);
+    }
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="unit-3-lesson-4-logical-operators-and-truth-tables">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#unit-3-lesson-4-logical-operators-and-truth-tables">#</doc-anchor-trigger>
+        <span>Unit 3: Lesson 4: Logical Operators and Truth Tables</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="coding-activity-1-3">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-3">#</doc-anchor-trigger>
+        <span>Coding Activity 1</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u3-l4-activity-one-java">
+<template #title>U3_L4_Activity_One.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 4 Coding Activity Question 1 */
+
+import java.util.Scanner;
+
+public class U3_L4_Activity_One
+{
+  public static void main(String[] args)
+  {
+    // Initialize Scanner
+    Scanner scan = new Scanner(System.in);
+    
+    // User Input
+    System.out.println(&quot;Enter a number: &quot;);
+    int num = scan.nextInt();
+    
+    // Final Output
+    if (!(num &gt;= 65 &amp;&amp; num &lt;= 100))
+      System.out.println(&quot;True&quot;);
+    else
+      System.out.println(&quot;False&quot;);
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-2-3">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2-3">#</doc-anchor-trigger>
+        <span>Coding Activity 2</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u3-l4-activity-two-java">
+<template #title>U3_L4_Activity_Two.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 4 Coding Activity Question 2 */
+
+import java.util.Scanner;
+
+public class U3_L4_Activity_Two
+{
+  public static void main(String[] args)
+  {
+    // Initialize Scanner
+    Scanner scan = new Scanner(System.in);
+    
+    // User Input
+    System.out.println(&quot;Enter two numbers:&quot;);
+    int num1 = scan.nextInt();
+    int num2 = scan.nextInt();
+    
+    // Final Output
+    if (num1 &gt;= 0 &amp;&amp; num1 % 2 == 0 &amp;&amp; num2 &gt;= 0 &amp;&amp; num2 % 2 == 0)
+      System.out.println(&quot;Both are positive and even.&quot;);
+    else if (num1 % 2 == 0 || num2 % 2 == 0)
+      System.out.println(&quot;At least one is negative or odd.&quot;);
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-3-3">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-3-3">#</doc-anchor-trigger>
+        <span>Coding Activity 3</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u3-l4-activity-three-java">
+<template #title>U3_L4_Activity_Three.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 4 Coding Activity Question 3 */
+
+import java.util.Scanner;
+
+public class U3_L4_Activity_Three
+{
+  public static void main(String[] args)
+  {
+    // Initialize Scanner
+    Scanner scan = new Scanner(System.in);
+    
+    // User Input
+    /// Latitude
+    System.out.println(&quot;Please enter the latitude:&quot;);
+    double latitude = scan.nextDouble();
+    /// Longitude
+    System.out.println(&quot;Please enter the longitude:&quot;);
+    double longitude = scan.nextDouble();
+    
+    // Validating Coordinates
+    if (!(latitude &gt;= -90 &amp;&amp; latitude &lt;= 90))
+      System.out.println(&quot;latitude is incorrect&quot;);
+    if (!(longitude &gt;= -180 &amp;&amp; longitude &lt;= 180))
+      System.out.println(&quot;longitude is incorrect&quot;);
+    
+    // Final Output
+    if (latitude &gt;= -90 &amp;&amp; latitude &lt;= 90 &amp;&amp; longitude &gt;= -180 &amp;&amp; longitude &lt;= 180)
+      System.out.println(&quot;The location: &quot; + latitude + &quot;, &quot; + longitude);
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="unit-3-lesson-5-short-circuit-evaluation">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#unit-3-lesson-5-short-circuit-evaluation">#</doc-anchor-trigger>
+        <span>Unit 3: Lesson 5: Short Circuit Evaluation</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="coding-activity-1-4">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-4">#</doc-anchor-trigger>
+        <span>Coding Activity 1</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u3-l5-activity-one-java">
+<template #title>U3_L5_Activity_One.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 5 Coding Activity Question 1 */
+
+import java.util.Scanner;
+
+public class U3_L5_Activity_One
+{
+  public static void main(String[] args)
+  {
+    // Initialize Scanner
+    Scanner scan = new Scanner(System.in);
+    
+    // User Input
+    System.out.println(&quot;Enter 2 integers:&quot;);
+    int x = scan.nextInt();
+    double y = scan.nextDouble();
+    
+    // Final Output
+    if (x/y &gt; 1 &amp;&amp; x/y &lt;= 8)
+      System.out.println(&quot;Ratio OK&quot;);
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-2-4">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2-4">#</doc-anchor-trigger>
+        <span>Coding Activity 2</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u3-l5-activity-two-java">
+<template #title>U3_L5_Activity_Two.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 5 Coding Activity Question 2 */
+
+import java.util.Scanner;
+
+public class U3_L5_Activity_Two
+{
+  public static void main(String[] args)
+  {
+    // Initialize Scanner
+    Scanner scan = new Scanner(System.in);
+    
+    // User Input
+    System.out.println(&quot;Enter two numbers:&quot;);
+    int a = scan.nextInt();
+    int b = scan.nextInt();
+
+    // Final Output
+    if(b != 0 &amp;&amp; a % b == 0)
+      System.out.println(b + &quot; is a factor of &quot; + a);
+    else
+      System.out.println(b + &quot; is not a factor of &quot; + a);
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="unit-3-lesson-6---de-morgans-law">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#unit-3-lesson-6---de-morgans-law">#</doc-anchor-trigger>
+        <span>Unit 3: Lesson 6 - De Morgan&#x27;s Law</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="coding-activity-1-5">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-5">#</doc-anchor-trigger>
+        <span>Coding Activity 1</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u3-l6-activity-one-java">
+<template #title>U3_L6_Activity_One.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 6 Coding Activity Question 1 */
+
+import java.util.Scanner;
+
+public class U3_L6_Activity_One
+{
+  public static void main(String[] args)
+  {
+    // Initialize Scanner
+    Scanner scan = new Scanner(System.in);
+    
+    // User Input
+    System.out.println(&quot;Enter a number in the fifties&quot;);
+    int num = scan.nextInt();
+
+    // Final Output
+    if(!(num &gt;= 50 &amp;&amp; num &lt; 60))
+    {
+      System.out.println(&quot;That's not in the fifties!&quot;);
+      num = 55;
+    }
+    System.out.println(&quot;Your number is &quot; + num);
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-2-5">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2-5">#</doc-anchor-trigger>
+        <span>Coding Activity 2</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u3-l6-activity-two-java">
+<template #title>U3_L6_Activity_Two.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 6 Coding Activity Question 2 */
+
+import java.util.Scanner;
+
+public class U3_L6_Activity_Two
+{
+  public static void main(String[] args)
+  {
+    // Initialize Scanner
+    Scanner scan = new Scanner(System.in);
+    
+    // User Input
+    int x = scan.nextInt();
+    int y = scan.nextInt();
+    
+    // Final Output
+    if(!(y &gt; 9) || (!(x &lt;= 2) &amp;&amp; x * y &gt; 10))
+      System.out.println(&quot;pass&quot;);
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="unit-3-lesson-7-comparing-objects">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#unit-3-lesson-7-comparing-objects">#</doc-anchor-trigger>
+        <span>Unit 3: Lesson 7: Comparing Objects</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="coding-activity-1-6">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-6">#</doc-anchor-trigger>
+        <span>Coding Activity 1</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u3-l7-activity-one-java">
+<template #title>U3_L7_Activity_One.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 7 Coding Activity Question 1 */
+
+import java.util.Scanner;
+
+public class U3_L7_Activity_One
+{
+  public static void main(String[] args)
+  {
+    // Initialize Scanner
+    Scanner scan = new Scanner(System.in);
+    
+    // Create Password
+    String password = &quot;bulbasaur&quot;;
+    
+    // User Input
+    System.out.println(&quot;Enter password:&quot;);
+    String pwGuess = scan.nextLine();
+    
+    // Final Output
+    if (pwGuess.equals(password))
+      System.out.println(&quot;Access granted!&quot;);
+    else
+      System.out.println(&quot;Access denied!&quot;);
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-2-6">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2-6">#</doc-anchor-trigger>
+        <span>Coding Activity 2</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u3-l7-activity-two-java">
+<template #title>U3_L7_Activity_Two.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 7 Coding Activity Question 2 */
+
+import java.util.Scanner;
+
+public class U3_L7_Activity_Two
+{
+  public static void main(String[] args)
+  {
+    // Initialize Scanner
+    Scanner scan = new Scanner(System.in);
+    
+    // User Input
+    System.out.println(&quot;Enter 2 strings:&quot;);
+    String word1 = scan.nextLine();
+    String word2 = scan.nextLine();
+    
+    // Final Output
+    if (word1.equals(word2))
+      System.out.println(&quot;Equal!&quot;);
+    else if (word1.toLowerCase().equals(word2.toLowerCase()))
+      System.out.println(&quot;Different case&quot;);
+    else if (word1.substring(0, word1.length() - 1).equals(word2.substring(0, word2.length() - 1)))
+      System.out.println(&quot;Close enough&quot;);
+    else
+      System.out.println(&quot;Try again&quot;);
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-3-4">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-3-4">#</doc-anchor-trigger>
+        <span>Coding Activity 3</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u3-l7-activity-three-java">
+<template #title>U3_L7_Activity_Three.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 7 Coding Activity Question 3 */
+
+import java.util.Scanner;
+import shapes.*;
+
+public class U3_L7_Activity_Three
+{
+  public static void main(String[] args)
+  {
+    // Initialize Scanner
+    Scanner scan = new Scanner(System.in);
+    
+    // User Input
+    /// Side Length for shape1
+    System.out.println(&quot;Enter the side length of the first regular polygon:&quot;);
+    double sideLength = scan.nextDouble();
+    /// # of Sides for shape2
+    System.out.println(&quot;Enter the number of sides of the second polygon:&quot;);
+    int numSides = scan.nextInt();
+    /// Side Length for shape2
+    System.out.println(&quot;Enter the side length of the second polygon:&quot;);
+    double sideLength2 = scan.nextDouble();
+    
+    // Creating Shapes
+    RegularPolygon shape1 = new RegularPolygon(sideLength);
+    RegularPolygon shape2 = new RegularPolygon(numSides, sideLength2);
+    
+    // Final Output
+    if (shape1.equals(shape2))
+      System.out.println(&quot;Congruent Regular Polygons!&quot;);
+    else
+      System.out.println(&quot;Different Regular Polygons&quot;);
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="assignment-3-crack-the-code">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#assignment-3-crack-the-code">#</doc-anchor-trigger>
+        <span>Assignment 3: Crack the Code!</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="coding-activity">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity">#</doc-anchor-trigger>
+        <span>Coding Activity</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="assignment3-java">
+<template #title>Assignment3.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">import java.util.Scanner;
+
+public class Assignment3 
+{
+  public static void main(String[] args) 
+  {
+    // Initialize Scanner
+    Scanner scan = new Scanner(System.in);
+    
+    // Welcome Screen
+    /// User Input
+    System.out.println(&quot;Welcome. What is your name?&quot;);
+    String userName = scan.nextLine();
+    System.out.println(&quot;Hello &quot; + userName + &quot;. Are you ready to crack the code?&quot;);
+    String userReady = scan.nextLine();
+    /// Check userReady Status
+    if (userReady.toLowerCase().equals(&quot;yes&quot;))
+      System.out.println(&quot;&quot;);
+    else
+      System.exit(0);
+    
+    // Initialize Variables
+    String wrongAns = &quot;Sorry, that was incorrect!\nBetter luck next time!&quot;;
+      
+    // Phase 1
+    System.out.println(&quot;PHASE 1&quot;);
+    System.out.println(&quot;Enter a string:&quot;);
+    String phase1 = scan.nextLine();
+    if (phase1.length() == 3)
+      System.out.println(&quot;Correct!&quot;);
+    else{
+      System.out.println(wrongAns); System.exit(0);
+    }
+    
+    // Phase 2
+    System.out.println(&quot;PHASE 2&quot;);
+    System.out.println(&quot;Enter a number:&quot;);
+    int phase2 = scan.nextInt();
+    if (phase2 == 19 || (phase2 &gt;= 35 &amp;&amp; phase2 &lt; 78))
+      System.out.println(&quot;Correct!&quot;);
+    else{
+      System.out.println(wrongAns); System.exit(0);
+    }
+    
+    // Phase 3
+    System.out.println(&quot;PHASE 3&quot;);
+    System.out.println(&quot;Enter a number:&quot;);
+    int phase3 = scan.nextInt();
+    if ((phase3 &gt; 0 &amp;&amp; phase3 % 2 == 0) || phase3 % 10 == 1)
+      System.out.println(&quot;Correct!&quot;);
+    else{
+      System.out.println(wrongAns); System.exit(0);
+    }
+    
+    // Final Output
+    System.out.println(&quot;You have cracked the code!&quot;);
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
 
                                 
                                 <!-- Required only on API pages -->
@@ -221,6 +1207,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script>window.__DOCS__ = { "title": "Unit 3: Boolean Expressions and If Statements", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    <script>window.__DOCS__ = { "title": "Unit 3: Boolean Expressions and If Statements", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.729746000442">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.729816432337">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -27,12 +27,12 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=2.4.0.729746000442" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=2.4.0.729816432337" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.729746000442" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.729816432337" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.729746000442" data-turbo-eval="false" defer></script>
-    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=2.4.0.729746000442" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.729816432337" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=2.4.0.729816432337" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -48,6 +48,10 @@
                 <div class="flex items-center justify-between h-full py-2 md:w-75">
                     <div class="flex items-center px-2 md:px-6">
                         <a id="docs-site-logo" href="../../" class="flex items-center leading-snug text-2xl">
+                            <span class="w-10 mr-2 grow-0 shrink-0 overflow-hidden">
+                                <img class="max-h-10 dark:hidden md:inline-block" src="../../static/icons/icon.png">
+                                <img class="max-h-10 hidden dark:inline-block" src="../../static/icons/icon.png">
+                            </span>
                             <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">Roboco</span>
                         </a>
                     </div>
@@ -156,6 +160,801 @@
         <span>Unit 5: Writing Classes</span>
     </h1>
 </doc-anchor-target>
+<doc-anchor-target id="unit-5-lesson-1-void-methods">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#unit-5-lesson-1-void-methods">#</doc-anchor-trigger>
+        <span>Unit 5: Lesson 1: Void Methods</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="coding-activity-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1">#</doc-anchor-trigger>
+        <span>Coding Activity 1</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u5-l1-activity-one-java">
+<template #title>U5_L1_Activity_One.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 1 Coding Activity Question 1 */
+
+import java.util.Scanner;
+
+public class U5_L1_Activity_One
+{
+  public static void myMethod()
+  {
+    // Final Output
+    System.out.println(&quot;I'm a void method!&quot;);
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="unit-5-lesson-2-parameters">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#unit-5-lesson-2-parameters">#</doc-anchor-trigger>
+        <span>Unit 5: Lesson 2: Parameters</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="coding-activity-1-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-1">#</doc-anchor-trigger>
+        <span>Coding Activity 1</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u5-l2-activity-one-java">
+<template #title>U5_L2_Activity_One.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 2 Coding Activity Question 1 */
+
+import java.util.Scanner;
+
+public class U5_L2_Activity_One
+{
+  public static void timeOfDay(int x)
+  {
+    // Final Output
+    if (x == 0) // 00:00 (Midnight)
+      System.out.println(&quot;midnight&quot;);
+    else if (x == 12) // 12:00 (Noon)
+      System.out.println(&quot;noon&quot;);
+    else if (x == 18) // 18:00 (Dusk)
+      System.out.println(&quot;dusk&quot;);
+    else if (x &gt; 0 &amp;&amp; x &lt; 12) // 00:01 - 11:59 (Morning)
+      System.out.println(&quot;morning&quot;);
+    else if (x &gt; 12 &amp;&amp; x &lt; 18) // 12:01 - 17:59 (Afternoon)
+      System.out.println(&quot;afternoon&quot;);
+    else if (x &gt; 18 &amp;&amp; x &lt; 24) // 18:01 - 23:59 (Evening)
+      System.out.println(&quot;evening&quot;);
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-2">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2">#</doc-anchor-trigger>
+        <span>Coding Activity 2</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u5-l2-activity-two-java">
+<template #title>U5_L2_Activity_Two.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 2 Coding Activity Question 2 */
+
+import java.util.Scanner;
+
+public class U5_L2_Activity_Two
+{
+  public static void reverser(String str)
+  {
+    // Initialize Variable
+    String revStr = &quot;&quot;;
+    
+    // Reverse str
+    for (int i = str.length(); i &gt; 0; i--)
+    {
+      revStr = revStr + str.substring(i - 1, i);
+    }
+    
+    // Final Output
+    System.out.println(revStr);
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-3">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-3">#</doc-anchor-trigger>
+        <span>Coding Activity 3</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u5-l2-activity-three-java">
+<template #title>U5_L2_Activity_Three.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 2 Coding Activity Question 3 */
+
+import java.util.Scanner;
+
+public class U5_L2_Activity_Three
+{
+  public static void printDouble(double num, int n)
+  {
+    // Final Output
+    for (int i = 0; i &lt; n; i++)
+    {
+      System.out.println(num);
+    }
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-4">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-4">#</doc-anchor-trigger>
+        <span>Coding Activity 4</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u5-l2-activity-four-java">
+<template #title>U5_L2_Activity_Four.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 2 Coding Activity Question 4 */
+
+import java.util.Scanner;
+
+public class U5_L2_Activity_Four
+{
+  public static void coinConverter(int n)
+  {
+    // Coin Conversion
+    int dollars = n / 100;
+    int quarters = (n - (dollars * 100)) / 25;
+    int dimes = (n - (dollars * 100) - (quarters * 25)) / 10;
+    int nickels = (n - (dollars * 100) - (quarters * 25) - (dimes * 10)) / 5;
+    int pennies = (n - (dollars * 100) - (quarters * 25) - (dimes * 10) - (nickels * 5));
+    
+    // Final Output
+    System.out.println(&quot;Dollar Bills: &quot; + dollars);
+    System.out.println(&quot;Quarters: &quot; + quarters);
+    System.out.println(&quot;Dimes: &quot; + dimes);
+    System.out.println(&quot;Nickels: &quot; + nickels);
+    System.out.println(&quot;Pennies: &quot; + pennies);
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="unit-5-lesson-3-parameters---primitive-vs-class">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#unit-5-lesson-3-parameters---primitive-vs-class">#</doc-anchor-trigger>
+        <span>Unit 5: Lesson 3: Parameters - Primitive vs. Class</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="coding-activity-1-2">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-2">#</doc-anchor-trigger>
+        <span>Coding Activity 1</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u5-l3-activity-one-java">
+<template #title>U5_L3_Activity_One.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 3 Coding Activity Question 1 */
+
+import java.util.Scanner;
+import shapes.*;
+
+public class U5_L3_Activity_One
+{
+  public static void makeEqTriangle(RegularPolygon x)
+  {
+    x.setNumSides(3);
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-2-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2-1">#</doc-anchor-trigger>
+        <span>Coding Activity 2</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u5-l3-activity-two-java">
+<template #title>U5_L3_Activity_Two.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 3 Coding Activity Question 2 */
+
+import java.util.Scanner;
+import shapes.*;
+import testing.Math;
+
+public class U5_L3_Activity_Two
+{
+  public static void randomize(Rectangle x)
+  {
+    // Randomize Length
+    int length = (int) ((Math.random() * 11) + 10);
+    if (length % 2 != 0)
+      length++;
+    
+    // Randomize Width
+    int width = (int) ((Math.random() * 7) + 7);
+    if (width % 2 == 0)
+      width++;
+    
+    // Set New Length &amp; Width for Rectangle x
+    x.setLength(length);
+    x.setWidth(width);
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-3-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-3-1">#</doc-anchor-trigger>
+        <span>Coding Activity 3</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u5-l3-activity-three-java">
+<template #title>U5_L3_Activity_Three.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 3 Coding Activity Question 3 */
+
+import java.util.Scanner;
+import shapes.*;
+
+public class U5_L3_Activity_Three
+{
+  public static void updateNumSides(RegularPolygon x, int y)
+  {
+    x.setNumSides(y);
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="unit-5-lesson-4-return-methods">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#unit-5-lesson-4-return-methods">#</doc-anchor-trigger>
+        <span>Unit 5: Lesson 4: Return Methods</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="coding-activity-1-3">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-3">#</doc-anchor-trigger>
+        <span>Coding Activity 1</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u5-l4-activity-one-java">
+<template #title>U5_L4_Activity_One.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 4 Coding Activity Question 1 */
+
+import java.util.Scanner;
+import shapes.*;
+
+public class U5_L4_Activity_One
+{
+  public static int totalSides(RegularPolygon x, RegularPolygon y)
+  {
+    // Calculate
+    int total = x.getNumSides() + y.getNumSides();
+    
+    return total;
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-2-2">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2-2">#</doc-anchor-trigger>
+        <span>Coding Activity 2</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u5-l4-activity-two-java">
+<template #title>U5_L4_Activity_Two.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 4 Coding Activity Question 2 */
+
+import java.util.Scanner;
+
+public class U5_L4_Activity_Two
+{
+  public static double distance(int x1, int y1, int x2, int y2)
+  {
+    // Calculate
+    double total = Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2));
+    
+    return total;
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-3-2">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-3-2">#</doc-anchor-trigger>
+        <span>Coding Activity 3</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u5-l4-activity-three-java">
+<template #title>U5_L4_Activity_Three.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 4 Coding Activity Question 3 */
+
+import java.util.Scanner;
+import shapes.*;
+
+public class U5_L4_Activity_Three
+{
+  public static double circDiff(Circle x, Circle y)
+  {
+    // Calculate
+    double total = Math.abs(x.getCircumference() - y.getCircumference());
+    
+    return total;
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-4-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-4-1">#</doc-anchor-trigger>
+        <span>Coding Activity 4</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u5-l4-activity-four-java">
+<template #title>U5_L4_Activity_Four.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 4 Coding Activity Question 4 */
+
+import java.util.Scanner;
+
+public class U5_L4_Activity_Four
+{
+  public static int substringCount(String x, String y)
+  {
+    // Count
+    int count = 0;
+    for (int i = 0; i &lt;= x.length() - y.length(); i++)
+    {
+      if (x.substring(i, i + y.length()).equals(y))
+      {
+        count++;
+      }
+    }
+    
+    return count;
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="unit-5-lesson-5-classes---the-basics">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#unit-5-lesson-5-classes---the-basics">#</doc-anchor-trigger>
+        <span>Unit 5: Lesson 5: Classes - The Basics</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="coding-activity-1-4">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-4">#</doc-anchor-trigger>
+        <span>Coding Activity 1</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="person-java">
+<template #title>Person.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">public class Person
+{
+  // Initialize Variables
+  private String firstName;
+  private String lastName;
+  private int age;
+  private String ssn;
+  
+  public Person(String f, String l, int a, String s)
+  {
+    // Store Variables to Class
+    firstName = f;
+    lastName = l;
+    age = a;
+    ssn = s;
+  }
+  
+  public String toString()
+  {
+    // Default Output
+    return &quot;SSN: &quot; + ssn + &quot;\n\tName: &quot; + firstName + &quot; &quot; + lastName + &quot;\n\tAge: &quot; + age; 
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-2-3">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2-3">#</doc-anchor-trigger>
+        <span>Coding Activity 2</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="oven-java">
+<template #title>Oven.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">public class Oven 
+{
+  // Represents the maximum possible temperature of an oven
+  private int maxTemp;
+
+  // Represents the current temperature of an oven
+  private int currentTemp;
+
+  // Constructs an oven with the given max temp and starting temp. The maximum
+  // temperature of an oven must be greater than 0, but no more than 500.
+  // The starting temperature should be less than or equal to the maximum t
+  // temperature, but no less than 0.
+  public Oven(int maxTemperature, int startTemperature) 
+  {
+    // Set maxTemp
+    if (maxTemperature &gt; 0 &amp;&amp; maxTemperature &lt;= 500)
+    {
+      maxTemp = maxTemperature;
+    }
+    else
+    {
+      maxTemp = 500;
+    }
+    // Set currentTemp
+    if (startTemperature &lt;= maxTemp &amp;&amp; startTemperature &gt;= 0)
+    {
+      currentTemp = startTemperature;
+    }
+    else if (startTemperature &gt; maxTemp)
+    {
+      currentTemp = maxTemp;
+    }
+    else
+    {
+      currentTemp = 0;
+    }
+  }
+
+  // Returns the maximum temperature of an oven
+  public int getMaxTemp() 
+  {
+    return maxTemp;
+  }
+
+  // Returns the current temperature of an oven
+  public int getCurrentTemp() 
+  {
+    return currentTemp;
+  }
+
+  // Turns an oven off by setting the current temperature to 0.
+  public void turnOff() 
+  {
+    if (currentTemp &gt; 0)
+    {
+      currentTemp = 0;
+    }
+  }
+
+  // Returns whether the current temperature of an oven is greater than 0. Should
+  // return false if the current temperature is 0.
+  public boolean isOn() 
+  {
+    if (currentTemp &gt; 0)
+    {
+      return true;
+    }
+    else
+    {
+      return false;
+    }
+  }
+
+  // Sets the current temperature of an oven to the given value. Remember,
+  // the current temperature should not exceed the max temp.
+  public void preheat(int temp) 
+  {
+    if (temp &lt; maxTemp)
+    {
+      currentTemp = temp;
+    }
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="unit-5-lesson-6-constructors">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#unit-5-lesson-6-constructors">#</doc-anchor-trigger>
+        <span>Unit 5: Lesson 6: Constructors</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="coding-activity-1-5">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-5">#</doc-anchor-trigger>
+        <span>Coding Activity 1</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="plane-java">
+<template #title>Plane.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">public class Plane
+{
+  private int location;
+  private String str = &quot;&quot;;
+  
+  // Plane() ; No parameter
+  public Plane()
+  {
+    // Set location
+    location = 0;
+  }
+  
+  // Plane() ; With parameter
+  public Plane(int loc)
+  {
+    // Set location if loc is in range
+    if (loc &gt;= -2000 &amp;&amp; loc &lt;= 2000)
+    {
+      location = loc;
+    }
+    // Fallback location
+    else
+    {
+      location = 0;
+    }
+  }
+  
+  // upward() ; Move plane by 100
+  public void upward()
+  {
+    if (location + 100 &lt;= 2000)
+    {
+      location += 100;
+    }
+  }
+  
+  // downward() ; Move plane by -100
+  public void downward()
+  {
+    if (location - 100 &gt;= -2000)
+    {
+      location -= 100;
+    }
+  }
+  
+  // getLocation() ; Return location
+  public int getLocation()
+  {
+    return location;
+  }
+  
+  // toString()
+  public String toString()
+  {
+    str = &quot;&quot;;
+    for(int i = location / 100; i &gt; -20; i--)
+    {
+      str += &quot; &quot;;
+    }
+    str += &quot;@&quot;;
+    return str;
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="unit-5-lesson-7---documenting-a-class">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#unit-5-lesson-7---documenting-a-class">#</doc-anchor-trigger>
+        <span>Unit 5: Lesson 7 - Documenting a Class</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="coding-activity-1-6">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-6">#</doc-anchor-trigger>
+        <span>Coding Activity 1</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="rectangle-java">
+<template #title>Rectangle.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">public class Rectangle
+{
+  // Create Variables
+  private double bs, ht;
+  
+  // Rectangle()
+  /// Default
+  public Rectangle()
+  {
+    bs = 1;
+    ht = 1;
+  }
+  
+  /// Parameter
+  public Rectangle(double x, double y)
+  {
+    if (x &gt; 1)
+      bs = x;
+    else
+      bs = 1;
+    if (y &gt; 1)
+      ht = y;
+    else
+      ht = 1;
+  }
+  
+  // equals()
+  public boolean equals(Rectangle x)
+  {
+    return (bs == x.getBase()) &amp;&amp; (ht == x.getHeight());
+  }
+  
+  // getArea()
+  public double getArea()
+  {
+    return bs * ht;
+  }
+  
+  // getBase()
+  public double getBase()
+  {
+    return bs;
+  }
+  
+  // getDiagonal()
+  public double getDiagonal()
+  {
+    return Math.sqrt(Math.pow(bs, 2) + Math.pow(ht, 2));
+  }
+  
+  // getHeight()
+  public double getHeight()
+  {
+    return ht;
+  }
+  
+  // getPerimeter()
+  public double getPerimeter()
+  {
+    return (bs * 2) + (ht * 2);
+  }
+  
+  // setBase()
+  public void setBase(double x)
+  {
+    if (x &gt; 0)
+    {
+      bs = x;
+    }
+  }
+  
+  // setHeight()
+  public void setHeight(double x)
+  {
+    if (x &gt; 0)
+    {
+      ht = x;
+    }
+  }
+  
+  // toString()
+  public String toString()
+  {
+    String str = &quot;rectangle with base &quot; + bs + &quot;, height &quot; + ht;
+    return str;
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="unit-5-lesson-8-static-vs-instance">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#unit-5-lesson-8-static-vs-instance">#</doc-anchor-trigger>
+        <span>Unit 5: Lesson 8: Static vs. Instance</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="coding-activity-1-7">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-7">#</doc-anchor-trigger>
+        <span>Coding Activity 1</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="car-java">
+<template #title>Car.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">public class Car
+{
+  // Initialize Variables
+  private String carMake;
+  private String carModel;
+  private int carYear;
+  private double carMpg;
+  private static int count = 0;
+  private int carId;
+  
+  // Car() - Default
+  public Car()
+  {
+    // User Input
+    carMake = &quot;None&quot;;
+    carModel = &quot;None&quot;;
+    carYear = 2000;
+    carMpg = 0.0;
+    // Update carId
+    count++;
+    carId = count;
+  }
+  
+  // Car()
+  public Car(String make, String model, int year, double mpg)
+  {
+    // User Input
+    carMake = make;
+    carModel = model;
+    /// Verify year
+    if (year &gt;= 1885 &amp;&amp; year &lt;= 2022)
+    {
+      carYear = year;
+    }
+    else if (year &gt; 2022)
+    {
+      carYear = 2022;
+    }
+    else if (year &lt; 1885)
+    {
+      carYear = 2000;
+    }
+    /// Verify mpg
+    if (mpg &gt;= 0)
+    {
+      carMpg = mpg;
+    }
+    else
+    {
+      carMpg = 0;
+    }
+    // Update carId
+    count++;
+    carId = count;
+  }
+  
+  // toString()
+  public String toString()
+  {
+    return &quot;ID: &quot; + carId + &quot;\nMake: &quot; + carMake + &quot;\nModel: &quot; + carModel + &quot;\nYear: &quot; + carYear + &quot;\nMPG: &quot; + carMpg;
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
 <doc-anchor-target id="assignment-5-player">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#assignment-5-player">#</doc-anchor-trigger>
