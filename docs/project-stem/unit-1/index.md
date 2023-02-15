@@ -7,6 +7,7 @@ order: -1
 # Unit 1: Primitive Types
 
 ## Unit 1: Lesson 1 - Output in Java
+
 ### Coding Activity 1
 +++ U1_L1_Activity_One.java
 ```java
@@ -21,6 +22,7 @@ class U1_L1_Activity_One
   }
 }
 ```
++++
 
 ### Coding Activity 2
 +++ U1_L1_Activity_Two.java
@@ -38,6 +40,7 @@ class U1_L1_Activity_Two
   }
 }
 ```
++++
 
 ### Coding Activity 3
 +++ U1_L1_Activity_Three.java
