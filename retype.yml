@@ -1,0 +1,13 @@
+input: ./docs
+output: .retype
+url: roboco.is-cute.moe
+
+branding:
+  logo: /static/retype-logo.svg
+  title: Roboco
+
+meta:
+  title: " - Roboco"
+
+footer:
+  copyright: [is-cute](https://is-cute.moe), {{ year }}
