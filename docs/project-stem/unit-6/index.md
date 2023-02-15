@@ -6,7 +6,7 @@ order: -1
 
 # Unit 6: Array
 
-## Unit 6: Lesson 1 - One-Dimensional Arrays
+## Unit 6: Lesson 1: One-Dimensional Arrays
 
 ### Coding Activity 1
 +++ U6_L1_Activity_One.java
@@ -70,7 +70,7 @@ public class U6_L1_Activity_Two
 ```
 +++
 
-## Unit 6: Lesson 2 - Traversing an Array
+## Unit 6: Lesson 2: Traversing an Array
 
 ### Coding Activity 1
 +++ U6_L2_Activity_One.java
@@ -152,7 +152,7 @@ public class U6_L2_Activity_Three
 ```
 +++
 
-## Unit 6: Lesson 3 - Arrays of Strings
+## Unit 6: Lesson 3: Arrays of Strings
 
 ### Coding Activity 1
 +++ U6_L3_Activity_One.java
@@ -236,7 +236,7 @@ public class U6_L3_Activity_Three
 ```
 +++
 
-## Unit 6: Lesson 4 - Algorithms on Arrays
+## Unit 6: Lesson 4: Algorithms on Arrays
 
 ### Coding Activity 1
 +++ U6_L4_Activity_One.java
@@ -309,7 +309,7 @@ public class U6_L4_Activity_Two
 ```
 +++
 
-## Unit 6: Lesson 5 - The Enhanced For Loop
+## Unit 6: Lesson 5: The Enhanced For Loop
 
 ### Coding Activity 1
 +++ U6_L5_Activity_One.java
@@ -376,5 +376,13 @@ public class U6_L5_Activity_Three
     return s;
   }
 }
+```
++++
+
+## Assignment 6: Array Statistics
+### Coding Activity
++++ StudentStatsArray.java
+```java
+
 ```
 +++

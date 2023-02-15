@@ -4,6 +4,7 @@ url: roboco.is-cute.moe
 
 branding:
   title: Roboco
+  logo: /static/icons/icon.png
 
 meta:
   title: " - Roboco"

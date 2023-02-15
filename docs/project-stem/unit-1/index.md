@@ -6,7 +6,7 @@ order: -1
 
 # Unit 1: Primitive Types
 
-## Unit 1: Lesson 1 - Output in Java
+## Unit 1: Lesson 1: Output in Java
 
 ### Coding Activity 1
 +++ U1_L1_Activity_One.java
@@ -61,7 +61,7 @@ class U1_L1_Activity_Three
 ```
 +++
 
-## Unit 1: Lesson 2 - User Input and Variables
+## Unit 1: Lesson 2: User Input and Variables
 
 ### Coding Activity 1
 +++ U1_L2_Activity_One.java
@@ -145,7 +145,7 @@ class U1_L2_Activity_Three
 ```
 +++
 
-## Unit 1: Lesson 3 - Data Types
+## Unit 1: Lesson 3: Data Types
 
 ### Coding Activity 1
 +++ U1_L3_Activity_One.java
@@ -229,7 +229,7 @@ public class U1_L3_Activity_Three
 ```
 +++
 
-## Unit 1: Lesson 4 - Number Calculations
+## Unit 1: Lesson 4: Number Calculations
 
 ### Coding Activity 1
 +++ U1_L4_Activity_One.java
@@ -358,7 +358,7 @@ class U1_L4_Activity_Four
 ```
 +++
 
-## Unit 1: Lesson 5 - Modular Division
+## Unit 1: Lesson 5: Modular Division
 
 ### Coding Activity 1
 +++ U1_L5_Activity_One.java
@@ -433,7 +433,7 @@ class U1_L5_Activity_Two
 ```
 +++
 
-## Unit 1: Lesson 6 - Numeric Casts
+## Unit 1: Lesson 6: Numeric Casts
 
 ### Coding Activity 1
 +++ U1_L6_Activity_One.java

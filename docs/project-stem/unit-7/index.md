@@ -5,8 +5,12 @@ order: -1
 ---
 
 # Unit 7: ArrayList
+!!! Under Construction
+This page is currently a work-in-progress! *Various elements may be incomplete or contain errors.*
+<p><img src="/static/roboco.gif" width="200"></p>
+!!!
 
-## Unit 7: Lesson 1 - ArrayList
+## Unit 7: Lesson 1: ArrayList
 
 ### Coding Activity 1
 +++ U7_L1_Activity_One.java
@@ -49,7 +53,7 @@ public class U7_L1_Activity_One
 ```
 +++
 
-## Unit 7: Lesson 2 - Traversing ArrayLists
+## Unit 7: Lesson 2: Traversing ArrayLists
 
 ### Coding Activity 1
 +++ U7_L2_Activity_One.java
@@ -142,7 +146,7 @@ public class U7_L2_Activity_Three
 ```
 +++
 
-## Unit 7: Lesson 3 - Array Algorithms with ArrayLists
+## Unit 7: Lesson 3: Array Algorithms with ArrayLists
 
 ### Coding Activity 1
 +++ U7_L3_Activity_One.java
@@ -218,7 +222,7 @@ public class U7_L3_Activity_Two
 ```
 +++
 
-## Unit 7: Lesson 4 - Linear Search
+## Unit 7: Lesson 4: Linear Search
 
 ### Coding Activity 1
 +++ U7_L4_Activity_One.java
