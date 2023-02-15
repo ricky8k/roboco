@@ -3,39 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.729741812799">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.729744658571">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
 
     <!-- Primary Meta Tags -->
-    <title>Unit 1: Lesson 5 - Modular Division - Roboco</title>
-    <meta name="title" content="Unit 1: Lesson 5 - Modular Division - Roboco">
-    <meta name="description" content="Raw" />
+    <title>Assignment 5: Player - Roboco</title>
+    <meta name="title" content="Assignment 5: Player - Roboco">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://roboco.is-cute.moe/project-stem/unit-1/1-5/" />
+    <link rel="canonical" href="https://roboco.is-cute.moe/project-stem/unit-5/assignment5/" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://roboco.is-cute.moe/project-stem/unit-1/1-5/">
-    <meta property="og:title" content="Unit 1: Lesson 5 - Modular Division - Roboco">
-    <meta property="og:description" content="Raw">
+    <meta property="og:url" content="https://roboco.is-cute.moe/project-stem/unit-5/assignment5/">
+    <meta property="og:title" content="Assignment 5: Player - Roboco">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://roboco.is-cute.moe/project-stem/unit-1/1-5/">
-    <meta property="twitter:title" content="Unit 1: Lesson 5 - Modular Division - Roboco">
-    <meta property="twitter:description" content="Raw">
+    <meta property="twitter:url" content="https://roboco.is-cute.moe/project-stem/unit-5/assignment5/">
+    <meta property="twitter:title" content="Assignment 5: Player - Roboco">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../../resources/css/retype.css?v=2.4.0.729741812799" rel="stylesheet" />
+    <link href="../../../resources/css/retype.css?v=2.4.0.729744658571" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../../resources/js/config.js?v=2.4.0.729741812799" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../../resources/js/config.js?v=2.4.0.729744658571" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=2.4.0.729741812799" data-turbo-eval="false" defer></script>
-    <script id="prism-js" type="text/javascript" src="../../../resources/js/prism.js?v=2.4.0.729741812799" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=2.4.0.729744658571" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../../../resources/js/prism.js?v=2.4.0.729744658571" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -153,105 +150,229 @@
                                 <div id="docs-sidebar-right-toggle"></div>
                 
                                 <!-- Page content  -->
-<doc-anchor-target id="unit-1-lesson-5---modular-division" class="break-words">
+<doc-anchor-target id="assignment-5-player" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#unit-1-lesson-5---modular-division">#</doc-anchor-trigger>
-        <span>Unit 1: Lesson 5 - Modular Division</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#assignment-5-player">#</doc-anchor-trigger>
+        <span>Assignment 5: Player</span>
     </h1>
 </doc-anchor-target>
-<doc-anchor-target id="coding-activity-1">
+<doc-anchor-target id="coding-activity">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1">#</doc-anchor-trigger>
-        <span>Coding Activity 1</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity">#</doc-anchor-trigger>
+        <span>Coding Activity</span>
     </h2>
 </doc-anchor-target>
 <doc-tabs>
-<doc-tab id="u1-l5-activity-one-java">
-<template #title>U1_L5_Activity_One.java</template>
+<doc-tab id="player-java">
+<template #title>Player.java</template>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-java"><code v-pre class="language-java">/* Unit 1 - Lesson 5 - Coding Activity Question 1 */
-
-import java.util.Scanner;
-
-class U1_L5_Activity_One 
+<pre class="language-java"><code v-pre class="language-java">public class Player 
 {
-  public static void main(String[] args) 
+  // Initialize Variables
+  /// Player
+  private static int numPlayers = 0;
+  private String name;
+  private int hp;
+  /// Coordinates
+  private int x;
+  private int y;
+  private int z;
+  private int direction;
+  
+  // Create Player
+  /// Make Player with Default Values
+  public Player()
   {
-    // Initialize Scanner
-    Scanner scan = new Scanner(System.in);
-    
-    // User Input
-    System.out.println(&quot;Please enter a three digit number:&quot;);
-    int num = scan.nextInt();
-    
-    // Final Output
-    System.out.println(&quot;&quot;);
-    System.out.println(&quot;Here are the digits:&quot;);
-    /// First Digit
-    int digit1 = num / 100;
-    System.out.println(digit1);
-    /// Second Digit
-    int digit2 = num / 10 % 10;
-    System.out.println(digit2);
-    /// Third Digit
-    int digit3 = num % 10;
-    System.out.println(digit3);
+    // Player
+    /// Update Number of Players
+    numPlayers++;
+    /// Player Name
+    name = &quot;P&quot; + numPlayers;
+    System.out.print(numPlayers);
+    /// Player Health
+    hp = 20;
+    /// Coordinates
+    x = 0;
+    y = 0;
+    z = 0;
+    /// Direction
+    direction = 1;
+  }
+  
+  /// Make Player with Name, X, Y, Z
+  public Player(String n, int a, int b, int c)
+  {
+    // Player
+    /// Update Number of Players
+    numPlayers++;
+    /// Player Name
+    name = n;
+    /// Player Health
+    hp = 20;
+    /// Coordinates
+    x = a;
+    y = b;
+    z = c;
+    /// Direction
+    direction = 1;
+  }
+  
+  /// Make Player with Name, X, Y, Z, HP, Direction
+  public Player(String n, int a, int b, int c, int h , int d)
+  {
+    // Player
+    /// Update Number of Players
+    numPlayers++;
+    /// Player Name
+    name = n;
+    /// Player Health
+    if (h &lt; 0)
+      hp = 0;
+    else
+      hp = h;
+    /// Coordinates
+    x = a;
+    y = b;
+    z = c;
+    /// Direction
+    if (d &gt;= 1 &amp;&amp; d &lt;= 6)
+      direction = d;
+    else
+      direction = 1;
+  }
+  
+  // Return Player Data
+  /// Fetch Current # of Players
+  public static int getNumPlayers()
+  {
+    return numPlayers;
+  }
+  /// Fetch Current Player Name
+  public String getName()
+  {
+    return name;
+  }
+  /// Fetch Current X-Coordinate
+  public int getX()
+  {
+    return x;
+  }
+  /// Fetch Current Y-Coordinate
+  public int getY()
+  {
+    return y;
+  }
+  /// Fetch Current Z-Coordinate
+  public int getZ()
+  {
+    return z;
+  }
+  /// Fetch Current Player HP
+  public int getHp()
+  {
+    return hp;
+  }
+  /// Fetch Current Player Direction
+  public int getDirection()
+  {
+    return direction;
+  }
+  /// Get Distance from Player to Coordinates
+  public double getDistance(int a, int b, int c)
+  {
+    return Math.sqrt(Math.pow(a - x, 2) + Math.pow(b - y, 2) + Math.pow(c - z, 2));
+  }
+  /// Get Distance from Player to Player
+  public double getDistance(Player p)
+  {
+    return Math.sqrt(Math.pow(p.getX() - x, 2) + Math.pow(p.getY() - y, 2) + Math.pow(p.getZ() - z, 2)); 
+  }
+  /// Convert to String
+  public String toString()
+  {
+    return &quot;Name: &quot; + name + &quot;\nHealth: &quot; + hp + &quot;\nCoordinates: X &quot; + x + &quot; Y &quot; + y + &quot; Z &quot; + z + &quot;\nDirection: &quot; + direction;
+  }
+  
+  // Modify Player
+  /// Set Player HP
+  public void setHp(int h)
+  {
+    if (h &lt; 0)
+      hp = 0;
+    else
+      hp = h;
+  }
+  /// Set Player Direction
+  public void setDirection(int d)
+  {
+    if (d &gt;= 1 &amp;&amp; d &lt;= 6)
+      direction = d;
+  }
+  /// Move Player
+  public void move(int d, int u)
+  {
+    // Set Direction
+    int direction = getDirection();
+    if (d &gt;= 1 &amp;&amp; d &lt;= 6)
+    {
+      direction = d;
+    }
+    // Move
+    if (direction == 1) // North
+    {
+      x += u;
+    }
+    else if (direction == 2) // South
+    {
+      x -= u;
+    }
+    else if (direction == 3) // Up
+    {
+      y += u;
+    }
+    else if (direction == 4) // Down
+    {
+      y -= u;
+    }
+    else if (direction == 5) // East
+    {
+      z += u;
+    }
+    else if (direction == 6) // West
+    {
+      z -= u;
+    }
+  }
+  /// Teleport Player
+  public void teleport(int a, int b, int c)
+  {
+    x = a;
+    y = b;
+    z = c;
+  }
+  /// Teleport Player to Player
+  public void teleport(Player p)
+  {
+    x = p.getX();
+    y = p.getY();
+    z = p.getZ();
+  }
+  /// Attack Player
+  public void attack(Player p, int d)
+  {
+    if (p.getHp() &gt; 0)
+    {
+      if (p.getHp() - d &gt;= 0)
+        p.setHp(p.getHp() - d);
+      else
+        p.setHp(0);
+      setHp(getHp() + (d / 2));
+    }
   }
 }</code></pre>
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
-<p><a href="/docs/project-stem/unit-1/1-5/raw/1.5-activity1.java" class="no-link inline-flex items-center font-medium cursor-pointer transition-colors duration-200 ease-out focus:outline-none bg-blue-500 hover:bg-blue-700 text-white px-4 h-10 text-sm rounded-md">
-    <span>Raw</span>
-</a></p>
-<doc-anchor-target id="coding-activity-2">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2">#</doc-anchor-trigger>
-        <span>Coding Activity 2</span>
-    </h2>
-</doc-anchor-target>
-<doc-tabs>
-<doc-tab id="u1-l5-activity-two-java">
-<template #title>U1_L5_Activity_Two.java</template>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-java"><code v-pre class="language-java">/* Unit 1 - Lesson 5 - Coding Activity Question 2 */
-
-import java.util.Scanner;
-
-class U1_L5_Activity_Two 
-{
-  public static void main(String[] args) 
-  {
-    // Initialize Scanner
-    Scanner scan = new Scanner(System.in);
-    
-    // User Input
-    System.out.println(&quot;Please enter a four digit number:&quot;);
-    int num = scan.nextInt();
-    
-    // Final Output
-    System.out.println(&quot;&quot;);
-    System.out.println(&quot;Here are the digits:&quot;);
-    /// Fourth Digit
-    int digit4 = num % 10;
-    System.out.println(digit4);
-    /// Third Digit
-    int digit3 = num / 10 % 10;
-    System.out.println(digit3);
-    /// Second Digit
-    int digit2 = num / 100 % 10;
-    System.out.println(digit2);
-    /// First Digit
-    int digit1 = num / 1000;
-    System.out.println(digit1);
-  }
-}</code></pre>
-</doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
-<p><a href="/docs/project-stem/unit-1/1-5/raw/1.5-activity2.java" class="no-link inline-flex items-center font-medium cursor-pointer transition-colors duration-200 ease-out focus:outline-none bg-blue-500 hover:bg-blue-700 text-white px-4 h-10 text-sm rounded-md">
-    <span>Raw</span>
-</a></p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -261,20 +382,20 @@ class U1_L5_Activity_Two
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../project-stem/unit-1/1-4/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../project-stem/unit-2/2-4/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">1.​4 - Number Calculations</span>
+                                                <span class="block mt-1">2.​4 - Classes and Objects</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../project-stem/unit-1/1-6/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../project-stem/unit-6/6-1/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">1.​6 - Numeric Casts</span>
+                                                <span class="block mt-1">6.​1 - One-​Dimensional Arrays</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -318,6 +439,6 @@ class U1_L5_Activity_Two
 
     <div id="docs-overlay-target"></div>
 
-    <script>window.__DOCS__ = { "title": "1.5 - Modular Division", level: 3, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
+    <script>window.__DOCS__ = { "title": "A.5 - Player", level: 3, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
 </body>
 </html>

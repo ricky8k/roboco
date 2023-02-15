@@ -9,29 +9,30 @@
     <meta name="generator" content="Retype 2.4.0">
 
     <!-- Primary Meta Tags -->
-    <title>Home - Roboco</title>
-    <meta name="title" content="Home - Roboco">
+    <title>Unit 7: Lesson 2 - Traversing ArrayLists - Roboco</title>
+    <meta name="title" content="Unit 7: Lesson 2 - Traversing ArrayLists - Roboco">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://roboco.is-cute.moe/" />
+    <link rel="canonical" href="https://roboco.is-cute.moe/project-stem/unit-7/7-2/" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://roboco.is-cute.moe/">
-    <meta property="og:title" content="Home - Roboco">
+    <meta property="og:url" content="https://roboco.is-cute.moe/project-stem/unit-7/7-2/">
+    <meta property="og:title" content="Unit 7: Lesson 2 - Traversing ArrayLists - Roboco">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://roboco.is-cute.moe/">
-    <meta property="twitter:title" content="Home - Roboco">
+    <meta property="twitter:url" content="https://roboco.is-cute.moe/project-stem/unit-7/7-2/">
+    <meta property="twitter:title" content="Unit 7: Lesson 2 - Traversing ArrayLists - Roboco">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="resources/css/retype.css?v=2.4.0.729744658571" rel="stylesheet" />
+    <link href="../../../resources/css/retype.css?v=2.4.0.729744658571" rel="stylesheet" />
 
-    <script type="text/javascript" src="resources/js/config.js?v=2.4.0.729744658571" data-turbo-eval="false" defer></script>
-    <script type="text/javascript" src="resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="resources/js/lunr.js?v=2.4.0.729744658571" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../../resources/js/config.js?v=2.4.0.729744658571" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=2.4.0.729744658571" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../../../resources/js/prism.js?v=2.4.0.729744658571" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -46,7 +47,7 @@
                 <!-- Logo -->
                 <div class="flex items-center justify-between h-full py-2 md:w-75">
                     <div class="flex items-center px-2 md:px-6">
-                        <a id="docs-site-logo" href="" class="flex items-center leading-snug text-2xl">
+                        <a id="docs-site-logo" href="../../../" class="flex items-center leading-snug text-2xl">
                             <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">Roboco</span>
                         </a>
                     </div>
@@ -149,12 +150,124 @@
                                 <div id="docs-sidebar-right-toggle"></div>
                 
                                 <!-- Page content  -->
-<doc-anchor-target id="home" class="break-words">
+<doc-anchor-target id="unit-7-lesson-2---traversing-arraylists" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#home">#</doc-anchor-trigger>
-        <span>Home</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#unit-7-lesson-2---traversing-arraylists">#</doc-anchor-trigger>
+        <span>Unit 7: Lesson 2 - Traversing ArrayLists</span>
     </h1>
 </doc-anchor-target>
+<doc-anchor-target id="coding-activity-1">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1">#</doc-anchor-trigger>
+        <span>Coding Activity 1</span>
+    </h2>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u7-l2-activity-one-java">
+<template #title>U7_L2_Activity_One.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">import java.util.Scanner;
+import java.util.ArrayList;
+
+public class U7_L2_Activity_One
+{
+  public static void main(String[] args)
+  {
+    // Initialize Scanner
+    Scanner scan = new Scanner(System.in);
+    
+    // Create Variables
+    ArrayList&lt;String&gt; words = new ArrayList&lt;String&gt;();
+    String input = &quot;&quot;;
+    
+    // User Input
+    System.out.println(&quot;Please enter words, enter STOP to stop the loop.&quot;);
+    while (!(input.equals(&quot;STOP&quot;)))
+    {
+      input = scan.nextLine();
+      // Check input
+      if (!(input.equals(&quot;STOP&quot;)))
+        words.add(input);
+    }
+    
+    // Final Output
+    System.out.println(words);
+    /// Reverse Order
+    for (int i = 0; i &lt; words.size(); i++)
+    {
+      System.out.println(words.get((words.size() - 1) - i) + words.get(i));
+    }
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-2">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2">#</doc-anchor-trigger>
+        <span>Coding Activity 2</span>
+    </h2>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u7-l2-activity-two-java">
+<template #title>U7_L2_Activity_Two.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">import java.util.ArrayList;
+
+public class U7_L2_Activity_Two
+{
+  public static int highestNum(ArrayList&lt;Integer&gt; arr)
+  {
+    // Check for Highest Num in arr
+    int n = 0;
+    for (int i = 0; i &lt; arr.size(); i++)
+    {
+      if (arr.get(i) &gt; n)
+      {
+        n = arr.get(i);
+      }
+    }
+    
+    // End
+    return n;
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-3">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-3">#</doc-anchor-trigger>
+        <span>Coding Activity 3</span>
+    </h2>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u7-l2-activity-three-java">
+<template #title>U7_L2_Activity_Three.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">import java.util.ArrayList;
+
+public class U7_L2_Activity_Three
+{
+  public static ArrayList&lt;Integer&gt; getEvens(ArrayList&lt;Integer&gt; vals)
+  {
+    // Check for Even Nums in vals
+    ArrayList&lt;Integer&gt; even = new ArrayList&lt;Integer&gt;();
+    for (int i = 0; i &lt; vals.size(); i++)
+    {
+      if (vals.get(i) % 2 == 0)
+      {
+        even.add(vals.get(i));
+      }
+    }
+    
+    // End
+    return even;
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
 
                                 
                                 <!-- Required only on API pages -->
@@ -164,13 +277,20 @@
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../project-stem/unit-7/7-1/">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                            <span>
+                                                <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
+                                                <span class="block mt-1">7.​1 - Array​List</span>
+                                            </span>
+                                        </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l rounded-r-lg transition-colors duration-150 relative hover:z-5" href="project-stem/unit-1/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../project-stem/unit-7/7-3/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Unit 1: Primitive Types</span>
+                                                <span class="block mt-1">7.​3 - Array Algorithms With Array​Lists</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -214,6 +334,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script>window.__DOCS__ = { "title": "Home", isRoot: true, level: 0, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    <script>window.__DOCS__ = { "title": "7.2 - Traversing ArrayLists", level: 3, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
 </body>
 </html>
