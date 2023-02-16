@@ -278,3 +278,71 @@ public class U7_L4_Activity_Two
 }
 ```
 +++
+
+## Unit 7: Lesson 5: Selection Sort
+
+### Coding Activity 1
++++ U7_L5_Activity_One.java
+```java
+public class U7_L5_Activity_One
+{
+  public static void sortAndPrintReverse(String[] arr)
+  {
+    // Sort arr
+    for (int pos = arr.length - 1; pos >= 1; pos--)
+    {
+      int maxIndex = pos;
+      for (int j = pos; j >= 0; j--)
+      {
+        if (arr[j].compareTo(arr[maxIndex]) < 0)
+        {
+          maxIndex = j;
+        }
+      }
+      // Swap Function
+      String temp = arr[pos];
+      arr[pos] = arr[maxIndex];
+      arr[maxIndex] = temp;
+    }
+    
+    // Final Output
+    for (String s: arr)
+    {
+      System.out.print(s + " ");
+    }
+  }
+}
+```
++++
+
+### Coding Activity 2
++++ U7_L5_Activity_Two.java
+```java
+import java.util.ArrayList;
+
+public class U7_L5_Activity_Two
+{
+  public static void selectSortReverse(ArrayList<Integer> list)
+  {
+    // Sort list
+    for (int pos = 0; pos < list.size() - 1; pos++)
+    {
+      // Initialize maxIndex
+      int index = pos;
+      // Check for Position
+      for (int j = pos + 1; j < list.size(); j++)
+      {
+        if (list.get(j) > list.get(index))
+        {
+          index = j;
+        }
+      }
+      // Swap Function
+      int temp = list.get(pos);
+      list.set(pos, list.get(index));
+      list.set(index, temp);
+    }
+  }
+}
+```
++++
