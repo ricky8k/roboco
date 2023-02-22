@@ -346,3 +346,82 @@ public class U7_L5_Activity_Two
 }
 ```
 +++
+
+## Unit 7: Lesson 6: Insertion Sort
+
+### Coding Activity 1
++++ U7_L6_Activity_One.java
+```java
+public class U7_L6_Activity_One
+{
+  public static void sortAndPrintReverse(String[] arr)
+  {
+    // Sort arr in Descending Order
+    for (int pos = 1; pos <= arr.length - 1; pos++)
+    {
+      // Temporary Storage
+      String temp = arr[pos];
+      int index = pos;
+      
+      // Sort arr
+      while (index > 0 && temp.compareTo(arr[index - 1]) > 0)
+      {
+        arr[index] = arr[index - 1];
+        index--;
+      }
+      arr[index] = temp;
+      
+      // Output Current arr
+      System.out.println("");
+      for (String s : arr)
+      {
+        System.out.print(s + " ");
+      }
+    }
+  }
+}
+```
++++
+
+### Coding Activity 2
++++ U7_L6_Activity_Two.java
+```java
+import java.util.ArrayList;
+
+public class U7_L6_Activity_Two
+{
+  public static int insertSort(ArrayList<Integer> list)
+  {
+    // Initialize Count Variable
+    int count = 0;
+    // Sort list in Ascending Order
+    for (int pos = 1; pos < list.size(); pos++)
+    {
+      // Temporary Storage
+      int temp = list.get(pos);
+      int index = pos;
+      
+      for (int rPos = index; rPos > 0; rPos--)
+      {
+        // Update Count
+        count++;
+        // Sort list
+        if (index > 0 && temp < list.get(index - 1))
+        {
+          list.set(index, list.get(index - 1));
+          index--;
+        }
+        else
+        {
+          break;
+        }
+      }
+      list.set(index, temp);
+    }
+
+    // End
+    return count;
+  }
+}
+```
++++
