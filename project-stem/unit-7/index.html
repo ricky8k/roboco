@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.729902682066">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.730411615203">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -30,12 +30,12 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=2.4.0.729902682066" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=2.4.0.730411615203" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.729902682066" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.730411615203" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.729902682066" data-turbo-eval="false" defer></script>
-    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=2.4.0.729902682066" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.730411615203" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=2.4.0.730411615203" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -604,6 +604,103 @@ public class U7_L5_Activity_Two
       list.set(pos, list.get(index));
       list.set(index, temp);
     }
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="unit-7-lesson-6-insertion-sort">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#unit-7-lesson-6-insertion-sort">#</doc-anchor-trigger>
+        <span>Unit 7: Lesson 6: Insertion Sort</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="coding-activity-1-5">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-5">#</doc-anchor-trigger>
+        <span>Coding Activity 1</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u7-l6-activity-one-java">
+<template #title>U7_L6_Activity_One.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">public class U7_L6_Activity_One
+{
+  public static void sortAndPrintReverse(String[] arr)
+  {
+    // Sort arr in Descending Order
+    for (int pos = 1; pos &lt;= arr.length - 1; pos++)
+    {
+      // Temporary Storage
+      String temp = arr[pos];
+      int index = pos;
+      
+      // Sort arr
+      while (index &gt; 0 &amp;&amp; temp.compareTo(arr[index - 1]) &gt; 0)
+      {
+        arr[index] = arr[index - 1];
+        index--;
+      }
+      arr[index] = temp;
+      
+      // Output Current arr
+      System.out.println(&quot;&quot;);
+      for (String s : arr)
+      {
+        System.out.print(s + &quot; &quot;);
+      }
+    }
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-2-4">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2-4">#</doc-anchor-trigger>
+        <span>Coding Activity 2</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u7-l6-activity-two-java">
+<template #title>U7_L6_Activity_Two.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">import java.util.ArrayList;
+
+public class U7_L6_Activity_Two
+{
+  public static int insertSort(ArrayList&lt;Integer&gt; list)
+  {
+    // Initialize Count Variable
+    int count = 0;
+    // Sort list in Ascending Order
+    for (int pos = 1; pos &lt; list.size(); pos++)
+    {
+      // Temporary Storage
+      int temp = list.get(pos);
+      int index = pos;
+      
+      for (int rPos = index; rPos &gt; 0; rPos--)
+      {
+        // Update Count
+        count++;
+        // Sort list
+        if (index &gt; 0 &amp;&amp; temp &lt; list.get(index - 1))
+        {
+          list.set(index, list.get(index - 1));
+          index--;
+        }
+        else
+        {
+          break;
+        }
+      }
+      list.set(index, temp);
+    }
+
+    // End
+    return count;
   }
 }</code></pre>
 </doc-codeblock></div>
