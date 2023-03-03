@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.730863611442">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.731188112417">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -30,12 +30,12 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=2.4.0.730863611442" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=2.4.0.731188112417" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.730863611442" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.731188112417" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.730863611442" data-turbo-eval="false" defer></script>
-    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=2.4.0.730863611442" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.731188112417" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=2.4.0.731188112417" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -251,6 +251,112 @@
     
     // End
     return arr;
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="unit-8-lesson-2-2-d-array-algorithms">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#unit-8-lesson-2-2-d-array-algorithms">#</doc-anchor-trigger>
+        <span>Unit 8: Lesson 2: 2-D Array Algorithms</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="coding-activity-1-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-1">#</doc-anchor-trigger>
+        <span>Coding Activity 1</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="temperaturemonth-java">
+<template #title>TemperatureMonth.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">public class TemperatureMonth
+{
+  private double[][] temperatures;
+
+  public TemperatureMonth(double[][] t)
+  {
+    temperatures = t;
+  }
+
+  public double[] getMaxTempWeekly()
+  {
+    // Initialize Variable
+    double[] arr = new double[temperatures.length];
+
+    // Check for Max Temperatures
+    for (int pos = 0; pos &lt; temperatures.length; pos++)
+    {
+      // Reset Temporary Storage
+      double maxTemp = temperatures[pos][0];
+      // Scan Row
+      for (int pos2 = 0; pos2 &lt; temperatures[pos].length; pos2++)
+      {
+        if (temperatures[pos][pos2] &gt; maxTemp)
+          maxTemp = temperatures[pos][pos2];
+      }
+      // Add maxTemp in Row to arr
+      arr[pos] = maxTemp;
+    }
+    
+    // End
+    return arr;
+  }
+
+  public double[] getMinTempWeekly()
+  {
+    // Initialize Variable
+    double[] arr = new double[temperatures.length];
+
+    // Check for Min Temperatures
+    for (int pos = 0; pos &lt; temperatures.length; pos++)
+    {
+      // Reset Temporary Storage
+      double minTemp = temperatures[pos][0];
+      // Scan Row
+      for (int pos2 = 0; pos2 &lt; temperatures[pos].length; pos2++)
+      {
+        if (temperatures[pos][pos2] &lt; minTemp)
+          minTemp = temperatures[pos][pos2];
+      }
+      // Add minTemp in Row to arr
+      arr[pos] = minTemp;
+    }
+    
+    // End
+    return arr;
+  }
+
+  public double getRange()
+  {
+    // Temporary Storage
+    double min = temperatures[0][0], max = temperatures[0][0];
+    
+    // Check Range
+    for (int pos = 0; pos &lt; temperatures.length; pos++)
+    {
+      // Scan Row
+      for (int pos2 = 0; pos2 &lt; temperatures[pos].length; pos2++)
+      {
+        // Check for Max Value
+        if (temperatures[pos][pos2] &gt; max)
+          max = temperatures[pos][pos2];
+        // Check for Min Value
+        if (temperatures[pos][pos2] &lt; min)
+          min = temperatures[pos][pos2];
+      }
+    }
+    
+    // End
+    return max - min;
+  }
+
+  public double getCertainTemp(int week, int day)
+  {
+    // End
+    return temperatures[week][day];
   }
 }</code></pre>
 </doc-codeblock></div>
