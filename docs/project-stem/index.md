@@ -10,7 +10,7 @@ This page is currently a work-in-progress! *Various elements may be incomplete o
 <p><img src="/static/roboco.gif" width="200"></p>
 !!!
 
-Answers to various units of the 2023 AP Computer Science A course on Project Stem.
+Source code to various units of the 2022-23 AP Computer Science A course on Project Stem.
 
 !!!info Note
 This page serves as a key to solve difficult problems on Project Stem, intended for the 2023 AP CS A course. *These solutions may grow out-of-date as new changes are made to the course every year.*
@@ -18,7 +18,7 @@ This page serves as a key to solve difficult problems on Project Stem, intended 
 *Try working on the problems on your own first!*
 !!!
 
-## Units
+## 📃 Unit Selection
 - [Unit 1: Primitive Types](unit-1/index.md)
 - [Unit 2: Using Objects](unit-2/index.md)
 - [Unit 3: Boolean Expressions and If Statements](unit-3/index.md)
