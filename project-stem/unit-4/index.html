@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.731191958239">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.731636985589">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -27,12 +27,12 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=2.4.0.731191958239" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=2.4.0.731636985589" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.731191958239" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.731636985589" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.731191958239" data-turbo-eval="false" defer></script>
-    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=2.4.0.731191958239" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.731636985589" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=2.4.0.731636985589" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -193,9 +193,9 @@ public class U4_L1_Activity_One
     while (x != 5)
     {
       x = scan.nextInt();
-      sum = sum + x;
+      sum += x;
     }
-    sum-=5; /* Adjust for stop error */
+    sum -= 5; /* Adjust for stop error */
     
     // Final Output
     System.out.println(&quot;Sum is &quot; + sum);
@@ -266,15 +266,15 @@ public class U4_L1_Activity_Three
     // User Input
     System.out.println(&quot;Input a word:&quot;);
     String word = scan.nextLine();
-    // Create Indexes
-    int i = 0, n = 2;
+    // Create Index
+    int n = 2;
     
     // Final Output
-    while (i &lt;= word.length())
+    for (int i = 0; i &lt;= word.length();)
     {
       if (word.indexOf(word) % 2 == 0)
       {
-        System.out.print(word.substring(i, i + n)); i+=3;
+        System.out.print(word.substring(i, i + n)); i += 3;
         while (i + n &gt; word.length())
           n--;
       }
