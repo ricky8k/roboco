@@ -27,3 +27,4 @@ This page serves as a key to solve difficult problems on Project Stem, intended 
 - [Unit 6: Array](unit-6/index.md)
 - [Unit 7: ArrayList](unit-7/index.md)
 - [Unit 8: 2D Array](unit-8/index.md)
+- [Unit 9: Inheritance](unit-9/index.md)
